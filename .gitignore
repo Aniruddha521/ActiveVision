@@ -1,5 +1,5 @@
 # Ignoreing unwanted files
-*.ipynb
+# *.ipynb
 
 # Ignoring cache folders and files
 __pycache__/
