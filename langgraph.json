@@ -1,0 +1,8 @@
+{
+    "dependencies": ["."],
+    "graphs": {
+      "activevision_agent": "./activevision_agent/activevision_agent.py:activevision_graph"
+    },
+    "env": "./.env"
+  }
+  
