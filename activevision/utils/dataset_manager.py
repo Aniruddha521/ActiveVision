@@ -37,11 +37,7 @@ class DatasetManager:
         return file_path
 
     def download_dataset(self, url, dataset_name):
-        """
-        Downloads a dataset file (zip, csv, or json) from the provided URL.
-        If it's a zip file, extracts its contents into a folder named dataset_name.
-        Otherwise, the file is simply saved.
-        """
+        
         ext = os.path.splitext(url)[1]
         filename = f"{dataset_name}{ext}"
         file_path = self._download_file(url, filename)
@@ -60,12 +56,7 @@ class DatasetManager:
             print(f"{dataset_name} downloaded as a single file at {file_path}.")
 
     def download_fixation(self, url, dataset_name, output_format='csv'):
-        """
-        Downloads fixation data (zip, csv, or json) from the provided URL.
-        If the file is a zip, extracts its contents into a folder named <dataset_name>_fixation.
-        Then, if output_format is provided (either 'csv' or 'json'),
-        all fixation files in the folder are merged into a single file.
-        """
+        
         if output_format not in ('csv', 'json'):
             raise AssertionError(f"Expected output_format to be 'csv' or 'json' but got {output_format}")
 
