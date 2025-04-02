@@ -1,0 +1,11 @@
+# Ignoreing unwanted files
+# *.ipynb
+
+# Ignoring cache folders and files
+__pycache__/
+
+# Ignoring model directory
+models/
+
+# Ignoring dataset directory 
+dataset/
