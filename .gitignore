@@ -3,9 +3,13 @@
 
 # Ignoring cache folders and files
 __pycache__/
+.langgraph_api/
 
 # Ignoring model directory
 models/
 
 # Ignoring dataset directory 
 dataset/
+
+# Enviroments
+.env
