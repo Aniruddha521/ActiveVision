@@ -16,13 +16,11 @@ class BatchOutputGenerationSignature(dspy.Signature):
     query: str = dspy.InputField(
         desc="User query describing the modifications to be applied to the images."
     )
-    images: List[InputImage] = dspy.InputField(
-        desc="List of input images along with their filenames."
-    )
+   
     feedback: Dict[str, str] = dspy.InputField(
         desc="Previous feedback from a reviewer on modified images, mapping filenames to comments.",
         default_factory=dict,
     )
-    output: List[GeneratedOutput] = dspy.OutputField(
-        desc="Processed images and bounding boxes reflecting the applied modifications."
+    output: GeneratedOutput = dspy.OutputField(
+        desc="Processed image and bounding boxes reflecting the applied modifications."
     )

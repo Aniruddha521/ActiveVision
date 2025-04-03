@@ -11,3 +11,5 @@ scikit-image
 scipy
 tqdm
 tensorboard
+langgraph
+diffusers
