@@ -1,0 +1,15 @@
+torch
+torchvision
+numpy
+pandas
+scikit-learn
+flask
+Pillow
+python-opencv
+docopt
+scikit-image
+scipy
+tqdm
+tensorboard
+langgraph
+diffusers
